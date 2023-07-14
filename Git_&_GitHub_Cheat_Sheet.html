@@ -124,7 +124,7 @@
         </li>
 
         <li class="CommandsInDark">
-            cd "directoryName"
+            cd &lt;directoryName&gt;
             <div class="grey">
                 to change directory
             </div>
@@ -195,7 +195,7 @@
         <li class="CommandsInDark">
             git init &lt;repo name&gt;
             <div class="grey">
-                create empty Git repo in specified directory
+                create empty Git repo in the specified directory
             </div>
         </li>
 
@@ -230,7 +230,7 @@
         </li>
 
         <li class="CommandsInDark">
-            git add --a 
+            git add --a or git add .
             <div class="grey">
                 to staged all the modified files in the staging area for the next commit
             </div>
@@ -251,19 +251,116 @@
         </li>
 
         <li class="CommandsInDark">
+            git commit -a -m "your commit message"
+            <div class="grey">
+                 to skip the staging area and commit directly. Commit message is a string so keep it in double quotation.
+            </div>
+        </li>
+
+        <li class="CommandsInDark">
             git log
             <div class="grey">
                 to show all the previous commits and their details
             </div>
         </li>
 
+        <br>
+
+        <li class="CommandsInDark">
+            press up arrow key 
+            <div class="grey">
+                to copy previous or above commands
+            </div>
+        </li>
+
+        <li class="CommandsInDark">
+            exit
+            <div class="grey">
+                to exit from the git bash terminal
+            </div>
+        </li>
+
+        <br>
+
+        <li class="CommandsInDark">
+            ls
+            <div class="grey">
+                list all the files present in the current directory
+            </div>
+        </li>
+
+        <li class="CommandsInDark">
+            rm &lt;fileName&gt; 
+            <div class="grey">
+                to delete a file from the current directory
+            </div>
+        </li>
+
+        <li class="CommandsInDark">
+            rm -rf &lt;directoryName&gt; 
+            <div class="grey">
+                to delete a directory from the current directory
+            </div>
+        </li>
+
+        <li class="CommandsInDark">
+            git rm --cached &lt;fileName&gt; 
+            <div class="grey">
+                to make a file untracked from tracked. Removes the specified file from the staging area, but the file remains in your local working directory as an untracked file. Git will no longer track changes to this file.
+            </div>
+        </li>
+
+        <br>
+
+        <li class="CommandsInDark">
+            git clone &lt;URL&gt; &lt;directoryName&gt;
+            <div class="grey">
+                to clone a remote repository in the specified directory
+            </div>
+        </li>
+
+        <br>
+
+        <li class="CommandsInDark">
+            .gitignore
+            <div class="grey">
+                contains all the ignored files or directories
+            </div>
+        </li>
+
+        <li class="CommandsInDark">
+            /directoryName/
+            <div class="grey">
+                 to ignore a particular directory. Write the /directory name/ in .gitignore. 
+            </div>
+        </li>
+
+        <br>
+
+        <li class="CommandsInDark">
+            git diff
+            <div class="grey">
+                 shows unstaged changes between the working directory and index. It shows what is changed but not staged.
+            </div>
+        </li>
+
+        <li class="CommandsInDark">
+            git diff --staged
+            <div class="grey">
+                 shows what is staged but not yet committed
+            </div>
+        </li>
+
+        <br>
+
+        <li class="CommandsInDark">
+            git mv &lt;existing fileName&gt; &lt;new fileName&gt;
+            <div class="grey">
+                 to change an existing fileName to a new newName
+            </div>
+        </li>
+    
     </ul>
-        
-        
-        
-
-
-
 </body>
 </html>
 

@@ -359,6 +359,110 @@
                  to change an existing fileName to a new newName
             </div>
         </li>
+
+         <br>
+
+        <li class="CommandsInDark">
+            rm -rf .git
+            <div class="grey">
+                 It is a dangerous command as it can delete .git directory resulting in losing all the history of the project.
+            </div>
+        </li>
+
+        <br>
+
+        <li class="CommandsInDark">
+            git log -p
+            <div class="grey">
+                to show all the previous commits, their details along with the changes introduced in each commit.
+            </div>
+        </li>
+
+        <li class="CommandsInDark">
+            git log -n
+            <div class="grey">
+                n is any number. It shows a list of n most recent commits made to a repository. For exmaple, git log -2 will show the last two commits.
+            </div>
+        </li>
+
+        <li class="CommandsInDark">
+            git log --stat
+            <div class="grey">
+                to show the files that were modified in each commit, the number of lines added, removed, and a summary line with the total number of files and lines changed.
+            </div>
+        </li>
+
+        <li class="CommandsInDark">
+            git log --pretty=oneline
+            <div class="grey">
+               to show each commit in a single line resulting in taking less space. Each line representing a commit and its associated commit hash and commit message.
+            </div>
+        </li>
+
+        <li class="CommandsInDark">
+            git log --pretty=short
+            <div class="grey">
+                to show each commit in short. It shows each commit containing commit hash, author name, and commit message.
+            </div>
+        </li>
+
+        <li class="CommandsInDark">
+            git log --pretty=full
+            <div class="grey">
+                it shows each commit containing commit hash, author name, commit name(the person who committed) and commit message.
+            </div>
+        </li>
+
+        <li class="CommandsInDark">
+            git log --since=&lt;date&gt;
+            <div class="grey">
+                to show the commit history by the date range. For example, git log --since=2.days/months/years will show the commits of last two days/two months/two years respectively.
+            </div>
+        </li>
+
+        <li class="CommandsInDark">
+            git log --pretty=format:"custom format"
+            <div class="grey">
+                to show commit history in the specified format. Format should be inside double quotation. For example, git log --pretty=format:"%h"/"%h--%an"/"%h--%ae" will show only commit hash/commit hash and author name/commit hash and author emailID respectively.
+            </div>
+        </li>
+
+        <br>
+
+        <li class="CommandsInDark">
+            git commit --amend
+            <div class="grey">
+                to modify the most recent commit. It combines the changes in the staging area with the last commit and creates a new commit. 
+            </div>
+        </li>
+
+        <br>
+
+        <li class="CommandsInDark">
+            git restore --staged &lt;fileName&gt;
+            <div class="grey">
+                to unstage the staged file. 
+            </div>
+        </li>
+
+        <li class="CommandsInDark">
+            git checkout -- &lt;fileName&gt;
+            <div class="grey">
+                to restore the previous version of the file. It will replace the version of the file we have in the working directory with the one we have in the staging area.  
+            </div>
+        </li>
+
+        <li class="CommandsInDark">
+            git checkout -f
+            <div class="grey">
+                to restore the previous version of all the modified files.
+            </div>
+        </li>
+
+        
+        
+
+        
     
     </ul>
 </body>

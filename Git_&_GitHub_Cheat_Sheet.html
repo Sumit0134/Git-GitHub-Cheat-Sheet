@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git & GitHub Cheat Sheet</title>
     <style>
-        h1, .purple{
+        h1,
+        .purple {
             color: rgb(162, 86, 232);
         }
-        hr{
-           border: 2px solid yellow;
+
+        hr {
+            border: 2px solid yellow;
         }
-        #gray, .grey{
+
+        #gray,
+        .grey {
             color: rgb(72, 71, 71);
         }
-        .CommandsInDark{
+
+        .CommandsInDark {
             color: black;
         }
     </style>
 </head>
+
 <body>
     <h1>Git & GitHub Cheat Sheet</h1>
     <p id="gray">This is a cheat sheet containing most important and commonly used Git commands.</p>
@@ -27,81 +34,84 @@
 
     <h2 class="purple">What is Git?</h2>
     <p>
-        <ul class="grey">
-            <li>
-                Git is a free open-source distributed version control system that allows developers to keep track of their changes made to their coding files. 
-            </li>
-            <li>
-                It also allows developers to collaborate with other developers and work along on a project.
-            </li>
-        </ul>
+    <ul class="grey">
+        <li>
+            Git is a free open-source distributed version control system that allows developers to keep track of their
+            changes made to their coding files.
+        </li>
+        <li>
+            It also allows developers to collaborate with other developers and work along on a project.
+        </li>
+    </ul>
     </p>
     <hr>
 
     <h2 class="purple">What is Version Control System?</h2>
     <p>
-        <ul class="grey">
-            <li>
-                A version control system(VCS) is a system which records all the changes made to a file. So in future if any version of the file is required, it can be called.
-            </li>
-            <li>
-                VCS also ensures that all the team members are working on the latest version of the file.
-            </li>
-        </ul>
+    <ul class="grey">
+        <li>
+            A version control system(VCS) is a system which records all the changes made to a file. So in future if any
+            version of the file is required, it can be called.
+        </li>
+        <li>
+            VCS also ensures that all the team members are working on the latest version of the file.
+        </li>
+    </ul>
     </p>
     <hr>
 
     <h2 class="purple">What is GitHub?</h2>
     <p>
-        <ul class="grey">
-            <li>
-                GitHub is an open-source hosting platform where developers host their projects, store their codes, and so on.
-            </li>
-            <li>
-                It also allows other developers to collaborate on the projects.
-            </li>
-        </ul>
+    <ul class="grey">
+        <li>
+            GitHub is an open-source hosting platform where developers host their projects, store their codes, and so
+            on.
+        </li>
+        <li>
+            It also allows other developers to collaborate on the projects.
+        </li>
+    </ul>
     </p>
     <hr>
 
     <h2 class="purple">For Installation of Git & GitHub:-</h2>
     <p>
-        <ul class="grey">
-            <li>
-                To install Git:-
-                <div class="grey">
-                    http://git-scm.com
-                </div>
-            </li>
-                &nbsp;
-            <li>
-                To install GitHub:-
-                <div class="grey">
-                    https://nameOfOS.github.com
-                </div>
-            </li>
-        </ul>
+    <ul class="grey">
+        <li>
+            To install Git:-
+            <div class="grey">
+                http://git-scm.com
+            </div>
+        </li>
+        &nbsp;
+        <li>
+            To install GitHub:-
+            <div class="grey">
+                https://nameOfOS.github.com
+            </div>
+        </li>
+    </ul>
     </p>
     <hr>
 
     <h2 class="purple">Commands:-</h2>
     <ul>
         <li class="CommandsInDark">
-            git config --global user.name "firstName middleName lastName" 
+            git config --global user.name "firstName middleName lastName"
             <div class="grey">
                 to set a user name
             </div>
         </li>
 
         <li class="CommandsInDark">
-            git config --global user.email "valid emailID" 
+            git config --global user.email "valid emailID"
             <div class="grey">
                 to set a user valid emailID
             </div>
         </li>
 
         <li class="CommandsInDark">
-            git config --global user.name 
+            git config --global user.name
             <div class="grey">
                 to check user name
             </div>
@@ -111,7 +121,7 @@
             git config --global user.email
             <div class="grey">
                 to check user valid emailID
-            </div> 
+            </div>
         </li>
 
         <br>
@@ -155,12 +165,12 @@
 
         <br>
 
-        <li class="CommandsInDark">    
+        <li class="CommandsInDark">
             vim
             <div class="grey">
                 to open vim editor
             </div>
-        </li>   
+        </li>
 
         <li class="CommandsInDark">
             :q
@@ -179,14 +189,14 @@
         <li class="CommandsInDark">
             git config --global core.editor vim
             <div class="grey">
-                to open vim editor on Linux OS. It will not open on Windows OS. 
+                to open vim editor on Linux OS. It will not open on Windows OS.
             </div>
         </li>
 
         <br>
 
         <li class="CommandsInDark">
-            git init 
+            git init
             <div class="grey">
                 initialize the current directory as a Git repository
             </div>
@@ -202,7 +212,7 @@
         <li class="CommandsInDark">
             mkdir &lt;directoryName&gt;
             <div class="grey">
-               to make a directory in the current directory 
+                to make a directory in the current directory
             </div>
         </li>
 
@@ -218,7 +228,8 @@
         <li class="CommandsInDark">
             git status
             <div class="grey">
-                to show modified files in the current working directory, staged for your next commit. List files which are staged, unstaged, and untracked.
+                to show modified files in the current working directory, staged for your next commit. List files which
+                are staged, unstaged, and untracked.
             </div>
         </li>
 
@@ -239,21 +250,23 @@
         <li class="CommandsInDark">
             git commit &lt;fileName or directoryName&gt; -m "your commit message"
             <div class="grey">
-                to commit a particular file or directory of the staging area. Commit message is a string so keep it in double quotation.
+                to commit a particular file or directory of the staging area. Commit message is a string so keep it in
+                double quotation.
             </div>
         </li>
 
         <li class="CommandsInDark">
             git commit -m "your commit message"
             <div class="grey">
-                to commit all the staged files or directories of the staging area. Commit message is a string so keep it in double quotation.
+                to commit all the staged files or directories of the staging area. Commit message is a string so keep it
+                in double quotation.
             </div>
         </li>
 
         <li class="CommandsInDark">
             git commit -a -m "your commit message"
             <div class="grey">
-                 to skip the staging area and commit directly. Commit message is a string so keep it in double quotation.
+                to skip the staging area and commit directly. Commit message is a string so keep it in double quotation.
             </div>
         </li>
 
@@ -267,7 +280,7 @@
         <br>
 
         <li class="CommandsInDark">
-            press up arrow key 
+            press up arrow key
             <div class="grey">
                 to copy previous or above commands
             </div>
@@ -290,23 +303,25 @@
         </li>
 
         <li class="CommandsInDark">
-            rm &lt;fileName&gt; 
+            rm &lt;fileName&gt;
             <div class="grey">
                 to delete a file from the current directory
             </div>
         </li>
 
         <li class="CommandsInDark">
-            rm -rf &lt;directoryName&gt; 
+            rm -rf &lt;directoryName&gt;
             <div class="grey">
                 to delete a directory from the current directory
             </div>
         </li>
 
         <li class="CommandsInDark">
-            git rm --cached &lt;fileName&gt; 
+            git rm --cached &lt;fileName&gt;
             <div class="grey">
-                to make a file untracked from tracked. Removes the specified file from the staging area, but the file remains in your local working directory as an untracked file. Git will no longer track changes to this file.
+                to make a file untracked from tracked. Removes the specified file from the staging area, but the file
+                remains in your local working directory as an untracked file. Git will no longer track changes to this
+                file.
             </div>
         </li>
 
@@ -331,7 +346,7 @@
         <li class="CommandsInDark">
             /directoryName/
             <div class="grey">
-                 to ignore a particular directory. Write the /directory name/ in .gitignore. 
+                to ignore a particular directory. Write the /directory name/ in .gitignore.
             </div>
         </li>
 
@@ -340,14 +355,14 @@
         <li class="CommandsInDark">
             git diff
             <div class="grey">
-                 shows unstaged changes between the working directory and index. It shows what is changed but not staged.
+                shows unstaged changes between the working directory and index. It shows what is changed but not staged.
             </div>
         </li>
 
         <li class="CommandsInDark">
             git diff --staged
             <div class="grey">
-                 shows what is staged but not yet committed
+                shows what is staged but not yet committed
             </div>
         </li>
 
@@ -356,16 +371,17 @@
         <li class="CommandsInDark">
             git mv &lt;existing fileName&gt; &lt;new fileName&gt;
             <div class="grey">
-                 to change an existing fileName to a new newName
+                to change an existing fileName to a new newName
             </div>
         </li>
 
-         <br>
+        <br>
 
         <li class="CommandsInDark">
             rm -rf .git
             <div class="grey">
-                 It is a dangerous command as it can delete .git directory resulting in losing all the history of the project.
+                It is a dangerous command as it can delete .git directory resulting in losing all the history of the
+                project.
             </div>
         </li>
 
@@ -381,49 +397,57 @@
         <li class="CommandsInDark">
             git log -n
             <div class="grey">
-                n is any number. It shows a list of n most recent commits made to a repository. For exmaple, git log -2 will show the last two commits.
+                n is any number. It shows a list of n most recent commits made to a repository. For exmaple, git log -2
+                will show the last two commits.
             </div>
         </li>
 
         <li class="CommandsInDark">
             git log --stat
             <div class="grey">
-                to show the files that were modified in each commit, the number of lines added, removed, and a summary line with the total number of files and lines changed.
+                to show the files that were modified in each commit, the number of lines added, removed, and a summary
+                line with the total number of files and lines changed.
             </div>
         </li>
 
         <li class="CommandsInDark">
             git log --pretty=oneline
             <div class="grey">
-               to show each commit in a single line resulting in taking less space. Each line representing a commit and its associated commit hash and commit message.
+                to show each commit in a single line resulting in taking less space. Each line representing a commit and
+                its associated commit hash and commit message.
             </div>
         </li>
 
         <li class="CommandsInDark">
             git log --pretty=short
             <div class="grey">
-                to show each commit in short. It shows each commit containing commit hash, author name, and commit message.
+                to show each commit in short. It shows each commit containing commit hash, author name, and commit
+                message.
             </div>
         </li>
 
         <li class="CommandsInDark">
             git log --pretty=full
             <div class="grey">
-                it shows each commit containing commit hash, author name, commit name(the person who committed) and commit message.
+                it shows each commit containing commit hash, author name, commit name(the person who committed) and
+                commit message.
             </div>
         </li>
 
         <li class="CommandsInDark">
             git log --since=&lt;date&gt;
             <div class="grey">
-                to show the commit history by the date range. For example, git log --since=2.days/months/years will show the commits of last two days/two months/two years respectively.
+                to show the commit history by the date range. For example, git log --since=2.days/months/years will show
+                the commits of last two days/two months/two years respectively.
             </div>
         </li>
 
         <li class="CommandsInDark">
             git log --pretty=format:"custom format"
             <div class="grey">
-                to show commit history in the specified format. Format should be inside double quotation. For example, git log --pretty=format:"%h"/"%h--%an"/"%h--%ae" will show only commit hash/commit hash and author name/commit hash and author emailID respectively.
+                to show commit history in the specified format. Format should be inside double quotation. For example,
+                git log --pretty=format:"%h"/"%h--%an"/"%h--%ae" will show only commit hash/commit hash and author
+                name/commit hash and author emailID respectively.
             </div>
         </li>
 
@@ -432,7 +456,8 @@
         <li class="CommandsInDark">
             git commit --amend
             <div class="grey">
-                to modify the most recent commit. It combines the changes in the staging area with the last commit and creates a new commit. 
+                to modify the most recent commit. It combines the changes in the staging area with the last commit and
+                creates a new commit.
             </div>
         </li>
 
@@ -441,37 +466,127 @@
         <li class="CommandsInDark">
             git restore --staged &lt;fileName&gt;
             <div class="grey">
-                to unstage the staged file. 
+                to unstage the staged file.
             </div>
         </li>
 
         <li class="CommandsInDark">
             git checkout -- &lt;fileName&gt;
             <div class="grey">
-                to restore the previous version of the file. It will replace the version of the file we have in the working directory with the one we have in the staging area.  
+                to restore the previous version of the file. It will replace the version of the file we have in the
+                working directory with the one we have in the staging area.
             </div>
         </li>
 
         <li class="CommandsInDark">
             git checkout -f
             <div class="grey">
-                to restore the previous version of all the modified files.
+                to restore the previous versions of all the modified files.
             </div>
         </li>
 
-        
-        
+        <br>
 
-        
-    
+        <li class="CommandsInDark">
+            git remote add &lt;name&gt; &lt;URL&gt;
+            <div class="grey">
+                to add a new remote repository to a Git repository. After adding a remote, &lt;name&gt; can be used as a
+                shortcut for &lt;URL&gt; in other commands.
+            </div>
+        </li>
+
+        <li class="CommandsInDark">
+            git remote -v
+            <div class="grey">
+                it shows the URLs that git has stored along with their shortcut names which is used to read and write to
+                that remote.
+            </div>
+        </li>
+
+        <li class="CommandsInDark">
+            git push -u origin main
+            <div class="grey">
+                to push the local branch named "main" to the remote repository named "origin"
+            </div>
+        </li>
+
+        <li class="CommandsInDark">
+            git branch -M main
+            <div class="grey">
+                to rename the current working branch to main or any preferred name
+            </div>
+        </li>
+
+        <li class="CommandsInDark">
+            git push
+            <div class="grey">
+                to update the remote branch with the local commits or changes
+            </div>
+        </li>
+
+        <br>
+
+        <li class="CommandsInDark">
+            git config --global alias.&lt;aliasName&gt; &lt;gitCommand&gt;
+            <div class="grey">
+                to create a shortcut name for Git Commands
+
+                <br>
+                For example:
+                <ul class="grey">
+
+                    <li class="grey">
+                        git config --global alias.st status - git status/git st
+                    </li>
+                    <li class="grey">
+                        git config --global alias.cm commit - git commit/git cm
+                    </li>
+                    <li class="grey">
+                        git config --global alias.unstage 'restore --staged --' - git restore --staged
+                        &lt;fileName&gt;/git unstage &lt;fileName&gt;
+                    </li>
+                    <li class="grey">
+                        git config --global alias.last 'log -p -1' - git log -p -1/git last
+                    </li>
+
+                </ul>
+            </div>
+        </li>
+
+        <br>
+
+        <li class="CommandsInDark">
+            git restore &lt;fileName&gt;
+            <div class="grey">
+                to restore the previoss version of the specified file as they were in the last commit.
+            </div>
+        </li>
+
+        <li class="CommandsInDark">
+            git branch
+            <div class="grey">
+                list all the branches in the current repository. * will appear next to the currently active branch.
+            </div>
+        </li>
+
+        <li class="CommandsInDark">
+            git checkout -b &lt;branchName&gt;
+            <div class="grey">
+                to create a new branch named &lt;branchName&gt;
+            </div>
+        </li>
+
+        <li class="CommandsInDark">
+            git checkout &lt;branchName&gt;
+            <div class="grey">
+                to switch to the branch named &lt;branchName&gt;
+            </div>
+        </li>
+
+
+
+
     </ul>
 </body>
+
 </html>
-
-
-    
-    
-
-
-                
-            
